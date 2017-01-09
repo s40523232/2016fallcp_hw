@@ -38,7 +38,22 @@ while ans != a_in:
     guess += 1
 
 alert("答對 ,猜了" + (str(guess)) + "次")
-&lt;/script&gt;</summary><category term="Brython"></category></entry><entry><title>W16</title><link href="./w16.html" rel="alternate"></link><published>2016-12-26T14:30:00+08:00</published><updated>2016-12-26T14:30:00+08:00</updated><author><name>40523232</name></author><id>tag:,2016-12-26:./w16.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;/script&gt;
+
+&lt;p&gt;w15週心得與程式範例&lt;/p&gt;
+&lt;script type="text/python3"&gt;
+from browser import document
+from browser import alert
+
+def get_input(ev):
+    the_input= input("請輸入")
+    alert("輸入為:"+str(the_input))
+
+
+document['ch01'].bind('click',get_input)
+&lt;/script&gt;
+
+&lt;p&gt;&lt;button id="ch01"&gt;取輸入後, 列印出來&lt;/button&gt;&lt;/p&gt;</summary><category term="Brython"></category></entry><entry><title>W16</title><link href="./w16.html" rel="alternate"></link><published>2016-12-26T14:30:00+08:00</published><updated>2016-12-26T14:30:00+08:00</updated><author><name>40523232</name></author><id>tag:,2016-12-26:./w16.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
